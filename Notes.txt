@@ -1,3 +1,5 @@
 This Repository consist of my all coding practice from 5/4/2025 - 5/5/2025
 Day 1:
-    
+    1. Write a simple factorial program.
+    2. Write a factorial program using a user-defined function.
+    3. Find the factorial of n. If the last digit of the factorial is even, reverse the factorial.
