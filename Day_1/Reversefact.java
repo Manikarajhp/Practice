@@ -4,7 +4,7 @@ public class Reversefact {
         String rev = "";
         while(n > 0){
             int last = n%10;
-            rev = rev + Integer.toString(last);
+            rev = rev + last;
             n = (int) n/10;
         }
         System.out.println(rev);
