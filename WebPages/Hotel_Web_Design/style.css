@@ -240,7 +240,8 @@ img {
 .booking-header , 
 .notify-header, 
 .location-header, 
-.settings-header {
+.settings-header,
+.book-table-header {
     height: 55px;
     display: flex;
     align-items: center;
@@ -250,14 +251,16 @@ img {
 .booking-header i,
 .notify-header i, 
 .location-header i, 
-.settings-header i {
+.settings-header i,
+.book-table-header i {
     font-size: 20px;
 }
 
 .booking-header h2, 
 .notify-header h2, 
 .location-header h2, 
-.settings-header h2{
+.settings-header h2,
+.book-table-header h2{
     margin-left: 7px;
 }
 
@@ -301,7 +304,8 @@ img {
 }
 
 .bookings .card .buttons button,
-.profile-edit input[type='submit'] {
+.profile-edit input[type='submit'],
+.menu-header button {
     width: 170px;
     height: 30px;
     border-radius: 10px;
@@ -412,7 +416,9 @@ img {
     font-size: 16px;
 }
 
-.profile-edit input[type='submit'] {
+.profile-edit input[type='submit'],
+.menu .card button,
+.your-menu .card button{
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -435,9 +441,106 @@ img {
     font-size: 18px;
     color: #fff;
 }
-
 .setting i {
     font-size: 16px;
     margin-right: 10px;
     color: #fff;
+}
+
+.book-table-header{
+    background: none;
+    position: fixed;
+}
+.master-image{
+    position: relative;
+    z-index: -1;
+    height: 40vh;
+}
+.master-image img{
+    width: 100%;
+    height: 100%;
+}
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menus{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 75%;
+    background-color: rgb(9, 37, 4);
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px;
+    border: 1px solid rgb(0, 78, 0);
+
+}
+.menus .menu-header{
+    margin: 7px;
+}
+.menus .menu-header span{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.menu-header button{
+    width: 80px;
+    height: 40px;
+}
+.menus .menu-header i{
+    font-size: 18px;
+}
+.menus .menu-nav{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.menus .menu-nav a{
+    font-size: 18px;
+}
+.menu, .your-menu{
+    display: none;
+    width: 100%;
+    height: 82%;
+    overflow-y: scroll;
+}
+.menu .card, .your-menu .card{
+    width: 100%;
+    height: 100px;
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(0, 74, 0);
+    border-radius: 5px;
+}
+.menu .card .info,.your-menu .card .info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.menu .card .info img, .your-menu .card .info img{
+    border-radius: 5px 0px 0px 5px;
+}
+.menu .card .info div, .your-menu .card .info div{
+    font-size: 1rem;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.menu .card button, .your-menu .card button{
+    width: 120px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+.your-menu .card button{
+    background: linear-gradient(to top left, red, black) !important;
+}
+
+.menus .active{
+    display: block;
 }
