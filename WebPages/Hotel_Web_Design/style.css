@@ -544,3 +544,30 @@ img {
 .menus .active{
     display: block;
 }
+.profile-body{
+    height: 100vh;
+    position: relative;
+}
+.footer-content{
+    width: 100%;
+    padding: 10px 7px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+}
+.footer-content .sites {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+.footer-content .sites i{
+    font-size: 16px;
+}
+.footer-content .sites i:hover{
+    background-color: rgb(0, 74, 0);
+}
