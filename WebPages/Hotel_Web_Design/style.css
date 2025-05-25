@@ -237,22 +237,22 @@ img {
     height: 50px;
     object-fit: cover;
 }
-.booking-header , .notify-header {
+.booking-header , .notify-header, .location-header {
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.booking-header i, .notify-header i {
+.booking-header i, .notify-header i, .location-header i {
     font-size: 20px;
 }
 
-.booking-header h2, .notify-header h2{
+.booking-header h2, .notify-header h2, .location-header h2{
     margin-left: 7px;
 }
 
-.bookings, .notify{
+.bookings, .notify, .location{
     margin: 7px;
 }
 
@@ -332,4 +332,10 @@ img {
 .notify .card a i{
     font-size: 12px;
     margin-right: 7px;
+}
+.location{
+    height: 75vh;
+}
+.location h3{
+    margin: 7px 0px;
 }
