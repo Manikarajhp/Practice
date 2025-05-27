@@ -500,3 +500,70 @@ img {
 }
 .footer-content .sites i { font-size: 16px; }
 .footer-content .sites i:hover { background: rgb(0, 74, 0); }
+
+
+@media screen and (min-width : 768px) {
+    .user span {
+        font-size: 1.6rem;
+    }
+    .search input {
+        height: 60px;
+        font-size: 20px;
+    }
+    .latest-pick,
+    .top-pick,
+    .near-pick,
+    .img-container .head,
+    .menu-header,
+    .location h3,
+    .notify .card h3 {
+        font-size: 1.6rem;
+    }
+    .img-container button,
+    .card .span button,
+    .menu-header button {
+        width: 120px;
+        height: 40px;
+        font-size: large;
+    }
+    .img-container button {
+        width: 200px;
+        height: 50px;
+    }
+    .card {
+        height: 150px;
+    }
+    .card img {
+        width: 30%;
+    }
+    i,
+    .notify .card a i {
+        font-size: 32px;
+    }
+    .notify .card a i {
+        font-size: 18px;
+    }
+    .menu-header #location-name {
+        font-size: 20px;
+    }
+    .info div h3,
+    .info div p {
+        font-size: 1.4rem;
+    }
+    .bookings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .bookings .card {
+        width: 100%;
+        height: auto;
+    }
+    .notify .card img {
+        width: 100px;
+        height: 100px;
+    }
+    header {
+        font-size: 1.3rem;
+    }
+}
