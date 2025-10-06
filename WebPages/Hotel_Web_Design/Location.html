@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="location-header">
+        <i class="fa-solid fa-arrow-left" onclick="history.back()"></i><h2>Location</h2>
+    </header>
+    <main>
+        <section class="bubble"></section>
+        <section class="bubble" id="bubble1"></section>
+        <section class="bubble" id="bubble2"></section>
+        <section class="bubble" id="bubble3"></section>
+        <section class="search">
+            <input type="text" placeholder="Search by Name or Location" aria-label="Search Hotels">
+            <i class="fa-solid fa-magnifying-glass active"></i>
+        </section>
+        <section class="location">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.580923649504!2d-122.08385168458225!3d37.3860519798288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba0251609b01%3A0xa42557da0f9de5d0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1620832953651!5m2!1sen!2sus" allowfullscreen="" loading="lazy" style="width:100%; height: 100%; border-radius: 10px;"></iframe>
+        </section>
+    </main>
+    <nav class="bottom-nav" aria-label="Bottom Navigation">
+        <a href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="Location.html" aria-label="Spots">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <a href="Bookings.html" aria-label="Bookings">
+            <i class="fa-solid fa-book"></i>
+        </a>
+        <a href="Notifications.html" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="notify-header">
+        <i class="fa-solid fa-arrow-left" onclick="history.back()"></i><h2>Notifications</h2>
+    </header>
+    <main>
+        <section class="bubble"></section>
+        <section class="bubble" id="bubble1"></section>
+        <section class="bubble" id="bubble2"></section>
+        <section class="bubble" id="bubble3"></section>
+        <section class="notify">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="">
+                <div class="message">
+                    <h3>ITC Grand Chola</h3>
+                    <p>Hurry up! The tables are fast filling. Book your table now.</p>
+                </div>
+                <a href="#" class="close-card" aria-label="Dismiss notification"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="">
+                <div class="message">
+                    <h3>Taj Coromandel</h3>
+                    <p>Special weekend offer! Get 20% off on your next booking.</p>
+                </div>
+                <a href="#" class="close-card" aria-label="Dismiss notification"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="">
+                <div class="message">
+                    <h3>Leela Palace</h3>
+                    <p>Your reservation is confirmed. We look forward to welcoming you!</p>
+                </div>
+                <a href="#" class="close-card" aria-label="Dismiss notification"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=400&q=80" alt="">
+                <div class="message">
+                    <h3>Park Hyatt</h3>
+                    <p>Enjoy complimentary breakfast with your stay this month.</p>
+                </div>
+                <a href="#" class="close-card" aria-label="Dismiss notification"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="">
+                <div class="message">
+                    <h3>Radisson Blu</h3>
+                    <p>Thank you for your feedback! We hope to serve you again soon.</p>
+                </div>
+                <a href="#" class="close-card" aria-label="Dismiss notification"><i class="fa-solid fa-x"></i></a>
+            </div>
+        </section>
+    </main>
+    <nav class="bottom-nav" aria-label="Bottom Navigation">
+        <a href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="Location.html" aria-label="Spots">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <a href="Bookings.html" aria-label="Bookings">
+            <i class="fa-solid fa-book"></i>
+        </a>
+        <a href="Notifications.html" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.close-card').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const card = btn.closest('.card');
+                if (card) card.remove();
+            });
+        });
+    </script>
+</body>
+</html>

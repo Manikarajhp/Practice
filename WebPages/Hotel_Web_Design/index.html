@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="https://th.bing.com/th/id/OIP.8Mi9Qr8E5N1dP0GX6Nx3bQHaHa?w=207&h=206&c=7&r=0&o=7&cb=iwp2&dpr=1.3&pid=1.7&rm=3" alt="">
+            <span>Hello!<br>Manikaraj</span>
+        </div>
+        <div class="settings">
+            <a href="Profile.html"><i class="fa-solid fa-gear"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="bubble"></section>
+        <section class="bubble" id="bubble1"></section>
+        <section class="bubble" id="bubble2"></section>
+        <section class="bubble" id="bubble3"></section>
+        <section class="search">
+            <input type="text" list="hotel-names" placeholder="Search by Name or Location" aria-label="Search Hotels">
+            <i class="fa-solid fa-magnifying-glass active"></i>
+            <datalist id="hotel-names">
+                <option value="Wonderla Resort Welcomes You!">
+                <option value="The Leela Palace Luxury Stay!">
+                <option value="ITC Grand Chola Experience!">
+                <option value="Taj Club House Comfort!">
+                <option value="Radisson Blu Hospitality!">
+                <option value="Green Park Hotel">
+                <option value="The Accord">
+                <option value="Park Hyatt Chennai">
+                <option value="Hyatt Regency">
+            </datalist>
+        </section>
+
+        <section class="latest-pick">
+            <h2>Latest Pick</h2>
+            <div class="img-container">
+            <img src="https://th.bing.com/th/id/OIP.cV8DlREpGC1QytlQ86HlhQHaEK?cb=iwp2&rs=1&pid=ImgDetMain" alt="Wonderla Resort">
+            <span class="head">
+                Wonderla Resort Welcomes You!<br>
+                <i class="fa-solid fa-location-dot"></i> Sholinganallur, Chennai
+            </span>
+            <a href="Book-table.html?name=Wonderla Resort Welcomes You!&loc=Sholinganallur, Chennai&img=https://th.bing.com/th/id/OIP.cV8DlREpGC1QytlQ86HlhQHaEK?cb=iwp2&rs=1&pid=ImgDetMain"><button>Book Now</button></a>
+            </div>
+        </section>
+
+        <section class="top-pick">
+            <h2>For You</h2>
+            <div class="pick-container">
+            <div class="img-container">
+                <img src="https://th.bing.com/th/id/OIP.SPZvqy2wceT3XscbSs6n1AHaEy?cb=iwp2&rs=1&pid=ImgDetMain" alt="The Leela Palace">
+                <span class="head">
+                The Leela Palace Luxury Stay!<br>
+                <i class="fa-solid fa-location-dot"></i> MRC Nagar, Chennai
+                </span>
+                <a href="Book-table.html?name=The Leela Palace&loc=MRC Nagar, Chennai&img=https://th.bing.com/th/id/OIP.SPZvqy2wceT3XscbSs6n1AHaEy?cb=iwp2&rs=1&pid=ImgDetMain"><button>Book Now</button></a>
+            </div>
+            <div class="img-container">
+                <img src="https://th.bing.com/th/id/OIP.GCkHRrEIOKUJiSdbDWC7kQHaC9?w=331&h=139&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3" alt="ITC Grand Chola">
+                <span class="head">
+                ITC Grand Chola Experience!<br>
+                <i class="fa-solid fa-location-dot"></i> Guindy, Chennai
+                </span>
+                <a href="Book-table.html?name=ITC Grand Chola&loc=Guindy, Chennai&img=https://th.bing.com/th/id/OIP.GCkHRrEIOKUJiSdbDWC7kQHaC9?w=331&h=139&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3"><button>Book Now</button></a>
+            </div>
+            <div class="img-container">
+                <img src="https://th.bing.com/th/id/OIP.T-0xrbuxSnzyvDi3cMnuawHaEK?cb=iwp2&rs=1&pid=ImgDetMain" alt="Taj Club House">
+                <span class="head">
+                Taj Club House Comfort!<br>
+                <i class="fa-solid fa-location-dot"></i> Anna Salai, Chennai
+                </span>
+                <a href="Book-table.html?name=Taj Club House&loc=Anna Salai, Chennai&img=https://th.bing.com/th/id/OIP.T-0xrbuxSnzyvDi3cMnuawHaEK?cb=iwp2&rs=1&pid=ImgDetMain"><button>Book Now</button></a>
+            </div>
+            <div class="img-container">
+                <img src="https://th.bing.com/th/id/OIP.kDtQwHw3dULeRGtTu0fisAHaEN?w=310&h=180&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3" alt="Radisson Blu">
+                <span class="head">
+                Radisson Blu Hospitality!<br>
+                <i class="fa-solid fa-location-dot"></i> Egmore, Chennai
+                </span>
+                <a href="Book-table.html?name=Radisson Blu&loc=Egmore, Chennai&img=https://th.bing.com/th/id/OIP.kDtQwHw3dULeRGtTu0fisAHaEN?w=310&h=180&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3"><button>Book Now</button></a>
+            </div>
+            </div>
+        </section>
+
+        <section class="near-pick">
+            <h2>Near To You</h2>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.5dvUnykjENrTLxcRylY2XQHaE8?cb=iwp2&rs=1&pid=ImgDetMain" alt="Green Park Hotel">
+                <div class="span">
+                    <h3>Green Park Hotel</h3>
+                    <i class="fa-solid fa-location-dot"></i> Vadapalani, Chennai <br>
+                    <i class="fa-regular fa-star"></i> 4.5
+                    <br>
+                    <a href="Book-table.html?name=Green Park Hotel&loc=Vadapalani, Chennai&img=https://th.bing.com/th/id/OIP.5dvUnykjENrTLxcRylY2XQHaE8?cb=iwp2&rs=1&pid=ImgDetMain"><button>Book Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/eb/23/eb/eb23eb5aca62c78d559eff538f400b57.jpg" alt="The Accord Metropolitan">
+                <div class="span">
+                    <h3>The Accord</h3>
+                    <i class="fa-solid fa-location-dot"></i> T. Nagar, Chennai <br>
+                    <i class="fa-regular fa-star"></i> 4.2
+                    <br>
+                    <a href="Book-table.html?name=The Accord&loc=T. Nagar, Chennai&img=https://i.pinimg.com/originals/eb/23/eb/eb23eb5aca62c78d559eff538f400b57.jpg"><button>Book Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.fZjt74S-S0-i4l30uSkJkwHaEo?w=313&h=180&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3" alt="Park Hyatt Chennai">
+                <div class="span">
+                    <h3>Park Hyatt Chennai</h3>
+                    <i class="fa-solid fa-location-dot"></i> Velachery, Chennai <br>
+                    <i class="fa-regular fa-star"></i> 4.6
+                    <br>
+                    <a href="Book-table.html?name=Park Hyatt Chennai&loc=Velachery, Chennai&img=https://th.bing.com/th/id/OIP.fZjt74S-S0-i4l30uSkJkwHaEo?w=313&h=180&c=7&r=0&o=7&cb=iwp2&pid=1.7&rm=3"><button>Book Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/tropical-resort-28630917.jpg" alt="Hyatt Regency">
+                <div class="span">
+                    <h3>Hyatt Regency</h3>
+                    <i class="fa-solid fa-location-dot"></i> Anna Salai, Chennai <br>
+                    <i class="fa-regular fa-star"></i> 4.4
+                    <br>
+                    <a href="Book-table.html?name=Hyatt Regency&loc=Anna Salai, Chennai&img=https://thumbs.dreamstime.com/b/tropical-resort-28630917.jpg"><button>Book Now</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Bottom Navigation">
+        <a href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="Location.html" aria-label="Spots">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <a href="Bookings.html" aria-label="Bookings">
+            <i class="fa-solid fa-book"></i>
+        </a>
+        <a href="Notifications.html" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

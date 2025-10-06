@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings & Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-body">
+    <header class="settings-header">
+        <i class="fa-solid fa-arrow-left" onclick="history.back()"></i><h2>Settings & Profile</h2>
+    </header>
+    <main>
+        <section class="bubble"></section>
+        <section class="bubble" id="bubble1"></section>
+        <section class="bubble" id="bubble2"></section>
+        <section class="bubble" id="bubble3"></section>
+        <section class="profile-pic">
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.8Mi9Qr8E5N1dP0GX6Nx3bQHaHa?w=207&h=206&c=7&r=0&o=7&cb=iwp2&dpr=1.3&pid=1.7&rm=3" alt="">
+                <span><i class="fa-solid fa-camera"></i></span>
+            </div>
+            <h2>Manikaraj</h2>
+            <p>Guindy, Chennnai</p>
+        </section>
+        <section class="profile-edit">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="NAME" id="name" placeholder="Your name" value="Manikaraj">
+                <label for="email">Email</label>
+                <input type="email" name="EMAIL" id="email" placeholder="Your email" value="manikaraj123@gmail.com ">
+                <label for="mobile">Mobile no</label>
+                <input type="number" name="MOBILE" id="mobile" placeholder="Your mobile" value="6356986958">
+                <label for="address">Address</label>
+                <input type="text" name="ADDRESS" id="address" placeholder="Your address" value="Guindy, Chennai">
+                <input type="submit" value="Save">
+            </form>
+            <div class="settings">
+                <div class="setting">
+                    <div><i class="fa-solid fa-book"></i>Booking history</div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="setting">
+                    <div><i class="fa-solid fa-heart"></i>Favourites</div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div><div class="setting">
+                    <div><i class="fa-solid fa-language"></i>Language</div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div><div class="setting">
+                    <div><i class="fa-solid fa-circle-half-stroke"></i>Theme</div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <center><p>Developed by <strong>Manikaraj</strong></p>
+            <div class="sites">
+                <a href="https://www.linkedin.com/in/manikaraj/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Manikarajhp"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Manikarajhp"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/manikaraj/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            </center>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
